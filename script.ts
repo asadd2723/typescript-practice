@@ -89,3 +89,32 @@ let classIn: newClass ={
   age: 22
 }
 
+// type aliases 
+//primitive type aliases
+// primitive type aliases ma apni type banao string number yn boolean sy usko jidr mrzi kro 
+type name =string; // ab "name" k type banai ha jis ki string type hai
+type age = number; // is age ko number type dii hai ab age ko as a type use kr skta hain 
+
+let userAge:age = 23; 
+let userName:name= 'asad';
+
+// object type aliases
+// yeh object ma type define ki hai phela sy hi jis sy...
+type person ={ 
+  name:string, // phela sy hi define hai object ma type 
+  age: number,
+}
+
+const person: person = { // yeh person object bana ga to woh person object type sy define hoga k is ma kia kia ayy or kis type ki value ayy gi  
+  name:"Asad", // object type ma name or age type add hai to sirf wohi value or type kr skta hoo is ma
+  age:12, 
+  // val: true, idr maine jab third value add ki to error ayy gya tha mean jo ap object type ma define krdoo ga woh add value or type add krskta hoon object ma
+}
+
+//Example of Union Type Alias
+type ID = string | number; // is ma do type add ki hai 
+
+let userId: ID = "abc123"; // union type sy hum dono type ki value jon si mrzi add krskta hoo
+let productId: ID = 456; // idr number ki hai or upr string
+
+

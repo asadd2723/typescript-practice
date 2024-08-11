@@ -59,3 +59,12 @@ let classIn = {
     section: "a",
     age: 22
 };
+let userAge = 23;
+let userName = 'asad';
+const person = {
+    name: "Asad", // object type ma name or age type add hai to sirf wohi value or type kr skta hoo is ma
+    age: 12,
+    // val: true, idr maine jab third value add ki to error ayy gya tha mean jo ap object type ma define krdoo ga woh add value or type add krskta hoon object ma
+};
+let userId = "abc123"; // union type sy hum dono type ki value jon si mrzi add krskta hoo
+let productId = 456; // idr number ki hai or upr string
