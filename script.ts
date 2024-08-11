@@ -30,3 +30,12 @@ val = "12"; // ab maine change kr k string add kr diya to koi error nii aya
 let val1: unknown; // unknown sy koi bi data type krskta hoon ap variable ma
 val1 = 120; // idr maine number add ki ya phela
 val1 = "120"; // ab maine change kr k string add kr diya to koi error nii aya
+
+//Void in TS 
+// woh function jo kuch return nhi krta tb void use krta hain mean jis function ma sirf console karain ga.... void use kry ga
+
+function abc() :void{
+  console.log("hey")
+}
+
+abc();
