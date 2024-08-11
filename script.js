@@ -26,3 +26,11 @@ function abc() {
     console.log("hey");
 }
 abc();
+//enum or enumeration in TS
+// jab koi different values ko group krna ho
+var direcrtion;
+(function (direcrtion) {
+    direcrtion["up"] = "UP";
+    direcrtion["down"] = "DOWN";
+})(direcrtion || (direcrtion = {}));
+console.log(direcrtion.up);

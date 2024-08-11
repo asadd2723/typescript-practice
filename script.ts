@@ -39,3 +39,12 @@ function abc() :void{
 }
 
 abc();
+
+//enum or enumeration in TS
+// jab koi different values ko group krna ho
+
+enum direcrtion{
+  up="UP",
+  down="DOWN"
+}
+console.log(direcrtion.up)
