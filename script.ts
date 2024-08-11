@@ -25,3 +25,8 @@ let val: any; // any sy koi bi data type krskta hoon ap variable ma
 val = 12; // idr maine number add ki ya phela
 val = "12"; // ab maine change kr k string add kr diya to koi error nii aya
 
+//unknown in typescript
+
+let val1: unknown; // unknown sy koi bi data type krskta hoon ap variable ma
+val1 = 120; // idr maine number add ki ya phela
+val1 = "120"; // ab maine change kr k string add kr diya to koi error nii aya
