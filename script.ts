@@ -70,3 +70,22 @@ function abcd (unionVal: number | string){
 
 abcd(12)
 abcd("asad")
+
+// intersection in TS
+// intersection ma jo bi 2 data type add kro gi to uski value zaror add krni hogi 
+type classMate = {
+  section : string,
+  age: number
+}
+
+type student = {
+  name: string
+}
+
+type newClass = classMate & student;
+let classIn: newClass ={
+  name: "Asad",
+  section:"a",
+  age: 22
+}
+

@@ -54,3 +54,8 @@ function abcd(unionVal) {
 }
 abcd(12);
 abcd("asad");
+let classIn = {
+    name: "Asad",
+    section: "a",
+    age: 22
+};
