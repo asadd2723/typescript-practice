@@ -89,7 +89,7 @@ let classIn: newClass ={
   age: 22
 }
 
-// type aliases 
+// type aliases
 //primitive type aliases
 // primitive type aliases ma apni type banao string number yn boolean sy usko jidr mrzi kro 
 type name =string; // ab "name" k type banai ha jis ki string type hai
@@ -115,6 +115,23 @@ const person: person = { // yeh person object bana ga to woh person object type 
 type ID = string | number; // is ma do type add ki hai 
 
 let userId: ID = "abc123"; // union type sy hum dono type ki value jon si mrzi add krskta hoo
+
+
 let productId: ID = 456; // idr number ki hai or upr string
+// apni mrzi ki type banao or type ki wajah sy data fixed hojai ga k is type ma yeh data ana zarori hai wrna error ayy ga.... 
+// yeh boht acha feature jis sy typescript apko restrict kr deta hai k jo data type hai is type k hi data add ho object ma....
+type getUserDetail ={
+  name:string,
+  username:string,
+  email:string,
+  phone:number,
+  password:string
+}
 
-
+let getUser: getUserDetail ={
+  name:"Asad",
+  username:"asadd2723",
+  phone:923117737399,
+  email:"asadu3040@gmail.com",
+  password:"asad0000"
+}

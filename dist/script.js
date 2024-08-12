@@ -68,3 +68,10 @@ const person = {
 };
 let userId = "abc123"; // union type sy hum dono type ki value jon si mrzi add krskta hoo
 let productId = 456; // idr number ki hai or upr string
+let getUser = {
+    name: "Asad",
+    username: "asadd2723",
+    phone: 923117737399,
+    email: "asadu3040@gmail.com",
+    password: "asad0000"
+};
