@@ -135,3 +135,22 @@ let getUser: getUserDetail ={
   email:"asadu3040@gmail.com",
   password:"asad0000"
 }
+
+//interface in TS 
+
+// type nm = string;
+// type nm= number;  type ma type name same hoga to error ayy ga 
+// mgr interface ma same name hoga to yeh unko merge krdai ga or hum is merge value ko use kr skta hain
+interface user {
+  name:string
+}
+
+interface user {
+  age:number
+}
+function interUser(userr:user){
+  userr.name;
+  userr.age
+}
+
+

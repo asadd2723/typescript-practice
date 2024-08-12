@@ -75,3 +75,7 @@ let getUser = {
     email: "asadu3040@gmail.com",
     password: "asad0000"
 };
+function interUser(userr) {
+    userr.name;
+    userr.age;
+}
