@@ -79,3 +79,8 @@ function interUser(userr) {
     userr.name;
     userr.age;
 }
+const employer = {
+    name: 'asad',
+    age: 22,
+    empId: 400595
+};

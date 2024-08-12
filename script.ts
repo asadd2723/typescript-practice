@@ -148,9 +148,25 @@ interface user {
 interface user {
   age:number
 }
-function interUser(userr:user){
+function interUser(userr:user){ // idr yeh merge ho raha hain 
   userr.name;
-  userr.age
+  userr.age;
 }
 
+//interface extends
+// interface extends tab use krta jab different type ki property mgr unka kuch common bi ho jis ko merge krna to extends use kr skta haiin
+
+interface person0 {
+  name:string,
+  age:number
+}
+interface employ extends person0 {
+  empId:number
+}
+
+const employer :employ={
+  name:'asad',
+  age:22,
+  empId:400595
+}
 
