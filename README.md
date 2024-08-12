@@ -27,10 +27,10 @@ Here are the key topics covered in this repository:
 To get started with these notes:
 
 1. Clone the Repository:
-- git clone https://github.com/asadd2723/typescript-practice.git
+  - git clone https://github.com/asadd2723/typescript-practice.git
 2. Explore the script.ts File:
-- Open script.ts in your favorite code editor.
-- Each topic is documented with code examples and explanations in Urdu.
+  - Open script.ts in your favorite code editor.
+  - Each topic is documented with code examples and explanations in Urdu.
 3. Experiment & Learn:
 Modify the code to see how changes affect the output.
 Use these notes as a reference while working on your TypeScript projects.
