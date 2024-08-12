@@ -4,6 +4,13 @@
 Welcome to my TypeScript practice repository! This is a collection of notes and code examples written in Urdu to help make learning TypeScript more accessible. 🚀
 
 
+## 📚 Table of Contents
+
+ - [Introduction](#introduction)
+ - [Topics Covered](#topics-covered)
+ - [How to use](#how-to-use)
+ - [Contributions](#contributions)
+
 ## ✨ Introduction
 
 This repository contains comprehensive TypeScript notes in Urdu, designed for both beginners and intermediate learners. The notes are available in the script.ts file and cover a wide range of topics to help you master TypeScript in a practical way.
