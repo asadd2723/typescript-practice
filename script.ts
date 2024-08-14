@@ -106,6 +106,7 @@ let userAge:age = 23;
 let userName:name= 'asad';
 
 // object type aliases
+
 // yeh object ma type define ki hai phela sy hi jis sy...
 type person ={ 
   name:string, // phela sy hi define hai object ma type 
@@ -145,6 +146,13 @@ let getUser: getUserDetail ={
 
 //interface in TS 
 
+// type and interface difference
+// first difference
+type checktype = number; // type ko equal sy assign krta is ki type
+interface checkInterface{ // is ko direct as object type krta hain 
+  name:string
+}
+//second difference
 // type nm = string;
 // type nm= number;  type ma type name same hoga to error ayy ga 
 // mgr interface ma same name hoga to yeh unko merge krdai ga or hum is merge value ko use kr skta hain
@@ -159,7 +167,7 @@ function interUser(userr:user){ // idr yeh merge ho raha hain
   userr.name;
   userr.age;
 }
-
+//third difference ma ap interface ko extend kr skta hoo 
 //interface extends
 // interface extends tab use krta jab different type ki property mgr unka kuch common bi ho jis ko merge krna to extends use kr skta haiin
 
@@ -176,5 +184,10 @@ const employer :employ={
   age:22,
   empId:400595
 }
+
+
+
+
+
 
 
