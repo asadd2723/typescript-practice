@@ -119,3 +119,23 @@ let ac1 = new AirConditioner(); // new sy ek instance bana ga jis ka mtlb ek obj
 let ac2 = new AirConditioner(); // ac2 ek new object instance ki wajah sy is ko ap different property dai skta hain koi error ni ayy ga is k koi link nhi ac1 sy 
 ac1.incTemp("ac one");
 ac2.incTemp("ac two");
+// class extend in TS
+class simpleRoom {
+    constructor() {
+        this.table = "yes";
+        this.paint = "yes";
+        this.chair = "yes";
+        this.light = "yes";
+        this.fan = "yes";
+    }
+}
+class computerRoom extends simpleRoom {
+    constructor() {
+        super(...arguments);
+        this.laptop = "yes";
+        this.pc = "yes";
+        this.monitor = "yes";
+    }
+}
+let newRoom = new computerRoom(); // jab hum ek instance bbnaya hai computerRoom k to us ma sari property thi jo simpleRoom ma thi is trhan hum class ko extend bi kr skta hain differenct other classes sy
+console.log(newRoom); // is ma sub property jo dono class ki merge hui hain extend krna sy 

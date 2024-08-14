@@ -217,3 +217,21 @@ let ac2 = new AirConditioner(); // ac2 ek new object instance ki wajah sy is ko 
 
 ac1.incTemp("ac one");
 ac2.incTemp("ac two");
+
+// class extend in TS
+class simpleRoom {
+  table= "yes"
+  paint="yes"
+  chair="yes"
+  light="yes"
+  fan="yes"
+}
+
+class computerRoom extends simpleRoom{
+  laptop="yes"
+  pc="yes";
+  monitor="yes"
+}
+
+let newRoom = new computerRoom() // jab hum ek instance bbnaya hai computerRoom k to us ma sari property thi jo simpleRoom ma thi is trhan hum class ko extend bi kr skta hain differenct other classes sy
+console.log(newRoom) // is ma sub property jo dono class ki merge hui hain extend krna sy 
