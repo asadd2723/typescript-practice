@@ -235,3 +235,19 @@ class computerRoom extends simpleRoom{
 
 let newRoom = new computerRoom() // jab hum ek instance bbnaya hai computerRoom k to us ma sari property thi jo simpleRoom ma thi is trhan hum class ko extend bi kr skta hain differenct other classes sy
 console.log(newRoom) // is ma sub property jo dono class ki merge hui hain extend krna sy 
+
+
+// Constructor in TS
+
+class earphone{
+  public name: string;
+  public price: number;
+
+  constructor(name:string, price:number){
+    this.name = name;
+    this.price=price 
+  }
+}
+let newEarphone = new earphone("apple",75000)
+
+console.log(newEarphone);
