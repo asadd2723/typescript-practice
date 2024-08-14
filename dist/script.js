@@ -63,6 +63,7 @@ let classIn = {
     section: "a",
     age: 22
 };
+console.log(classIn);
 let userAge = 23;
 let userName = 'asad';
 const person = {

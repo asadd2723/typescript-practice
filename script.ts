@@ -94,6 +94,7 @@ let classIn: newClass ={
   section:"a",
   age: 22
 }
+console.log(classIn);
 
 // type aliases
 //primitive type aliases
