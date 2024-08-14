@@ -140,11 +140,25 @@ class computerRoom extends simpleRoom {
 let newRoom = new computerRoom(); // jab hum ek instance bbnaya hai computerRoom k to us ma sari property thi jo simpleRoom ma thi is trhan hum class ko extend bi kr skta hain differenct other classes sy
 console.log(newRoom); // is ma sub property jo dono class ki merge hui hain extend krna sy 
 // Constructor in TS
+// agr class sy ek new instance create krain ga to constructor phela chly ga to hum is value add kr skta hai yeh jab run hoga to automatically value assign hojai gaiii mgr jab instance banao ga tb value sub pass krni hogi jo jo constructor ma use hui hai as a parameter agr nhi kro ga to error ayyy ga
 class earphone {
     constructor(name, price) {
         this.name = name;
         this.price = price;
     }
 }
-let newEarphone = new earphone("apple", 75000);
+let newEarphone = new earphone("apple", 75000); //agr idr ek value pass kroon ga to error agyy q k constructor ma parameter do hain error hanlding boht achi hai Typescript ma yeh sub javascript ma nhi hoti 
 console.log(newEarphone);
+//more example 
+class phone {
+    // public name: string;
+    // public price: number; agr yeh sub nhi likha to ap direct ko parameter ko hi access modifier (public, private, protected) bana do is sy apko itna sara code likhna zaror nhi 
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
+        this.name = name;
+        this.price = price;
+    }
+}
+let newPhone = new phone("Iphone 15 Pro Max", 450000); //agr idr ek value pass kroon ga to error agyy q k constructor ma parameter do hain error hanlding boht achi hai Typescript ma yeh sub javascript ma nhi hoti 
+console.log(newPhone);
