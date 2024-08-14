@@ -185,9 +185,35 @@ const employer :employ={
   empId:400595
 }
 
+// classes in TS
 
+class AirConditioner{
+  color ="white";
+  category="ac";
+  company ="gracee";
+  temp =22;
 
+  turnOn(){
+    console.log("turning on....");
+    console.log("turned on....");
+  }
+  turnOff(){
+    console.log("turning off....");
+    console.log("turned off....");
+  }
+  incTemp (name:string){
+    this.temp++;
+    console.log(`${name} is temperature increased by ${this.temp}`);
+  }
+  decTemp (name:string){
+    this.temp--
+    console.log(`${name} is temperature decreased by ${this.temp} `);
+  }
+}
 
+let ac1 = new AirConditioner(); // new sy ek instance bana ga jis ka mtlb ek object bana ga ma ap apni mrzi koi property add krskta hoo
+// class k instance bana kr ap unique property sy different object bana skta hoon
+let ac2 = new AirConditioner(); // ac2 ek new object instance ki wajah sy is ko ap different property dai skta hain koi error ni ayy ga is k koi link nhi ac1 sy 
 
-
-
+ac1.incTemp("ac one");
+ac2.incTemp("ac two");
