@@ -230,5 +230,11 @@ newRead.getvalue();
 // The readonly modifier can also be used with arrays to create immutable arrays:
 const numbers = [1, 2, 3, 4, 5];
 console.log(numbers[0]); // 1
-// numbers[0] = 10; // Error: Index signature in type 'readonly number[]' only permits reading property
-// numbers.push(6); // Error: Property 'push' does not exist on type 'readonly number[]'
+// is ko use kr skta hoon mgr change nhi q k yeh properties ab readonly ban gaai hain 
+const readinter = {
+    name: "Alice",
+    age: 30
+};
+console.log(readinter.name); // Alice 
+console.log(readinter.age); // 30
+// readinter.name = "Bob"; // Error: Cannot assign to 'name' because it is a read-only property

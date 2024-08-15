@@ -342,3 +342,22 @@ console.log(numbers[0]); // 1
 
 // numbers[0] = 10; // Error: Index signature in type 'readonly number[]' only permits reading property
 // numbers.push(6); // Error: Property 'push' does not exist on type 'readonly number[]'
+
+
+// 3. Readonly Properties in Interfaces 
+// You can use readonly in interfaces to define immutable properties:
+
+interface readInterface {
+  readonly name: string;
+  readonly age: number;
+}
+// is ko use kr skta hoon mgr change nhi q k yeh properties ab readonly ban gaai hain 
+const readinter: readInterface = {
+  name: "Alice", 
+  age: 30
+};
+
+console.log(readinter.name); // Alice 
+console.log(readinter.age); // 30
+
+// readinter.name = "Bob"; // Error: Cannot assign to 'name' because it is a read-only property
