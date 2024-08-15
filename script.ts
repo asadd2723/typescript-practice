@@ -268,10 +268,19 @@ class phone{
 let newPhone = new phone("Iphone 15 Pro Max",450000) //agr idr ek value pass kroon ga to error agyy q k constructor ma parameter do hain error hanlding boht achi hai Typescript ma yeh sub javascript ma nhi hoti 
 console.log(newPhone);
 
+//Access modifier in TS
+//class ma variable by default public hota hai to public nhi likho to by default public hi hoga
 
-console.log("checked")
-console.log(a);
-console.log(a);
-console.log(a);
-console.log(a);
+class hp{
+   public name="laptop"; // by default yeh variable public hoga to public na likho to kuch nhi hoga or isko class k andr or bahir sy change ki ya ja skta hai
+  getvalue(){
+    console.log(this.name);
+    
+  }
+}
+let newhp = new hp() 
+console.log(newhp.getvalue()) 
+newhp.name = "notebook pro" // maine is ki value idr change ki hai
+console.log(newhp.getvalue()) 
+
 
