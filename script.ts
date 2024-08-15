@@ -285,7 +285,7 @@ console.log(newhp.getvalue())
 
 // protected in ts
 class bankAccount{
-  private balance=1200; // private variable ko sirf class ma hi use kr skta hain mgr class k bahir use nhi kr skta
+  private balance=1200; // private variable ko sirf class ma hi use kr skta hain mgr class k bahir use nhi kr skta or is ko extend class ma bi use nhi kr skta
  getvalue(){
    console.log(this.balance);
    
@@ -295,4 +295,18 @@ let newBankAccount = new bankAccount()
 // newBankAccount.balance =120000 agr ma private variable ko bahir use kroon ga to yn uski value change kroon to error ayy ga q k private variable ko bahir nhi use kr skta
 console.log(newBankAccount.getvalue()) //private value ko dekh skta ho uska liya class ma function banao jis ma private ko access kro ga to ap is trhan is private value ko class k bahir dekh skta hoo
 
+// protected in TS
+class admin{
+  protected usr = "Asad" // is ko private krdo ga to yeh extend class ma access nhi hoga protected or private ma itna farak hai k protected extends ho kr use kr hojata hai dusri classes ma private nhi hota
+}
+class adminUser extends admin{
+  private isUser = true 
+  getvale(){
+    console.log(this.usr) // idr variable access ho rha hai protected ki wajah sy agr private hota to error ata 
+  }
+
+}
+
+let getAdmin = new adminUser()
+getAdmin.getvale() 
 
