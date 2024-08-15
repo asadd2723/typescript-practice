@@ -318,3 +318,18 @@ getAdmin.getvale()
 // public jo ap jidr mrzi use or change kr skta hoon class k bahir bi or andr bi
 // private class k bahir use nhi ho skta
 // protected class k extend hona py other classes ma use ho skta hai mgr class k bahir nhi....
+
+// readonly in ts
+
+// readonly value ko sirf read kr skta ho ek dafa assign hogi dubara change nhi kr skta hai... 
+class read{
+  constructor(public readonly reader:string){ 
+    this.reader =reader // idr assign ki hai ab is ko change nhi kr skta
+  }
+  getvalue(){
+    // this.reader = name // idr agr maine readonly ki value change ki to error ayy ga
+    console.log(this.reader) // is trhan use kr skta hai console py
+  }
+}
+let newRead = new read("reading")
+newRead.getvalue()
