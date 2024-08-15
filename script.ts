@@ -283,4 +283,16 @@ console.log(newhp.getvalue())
 newhp.name = "notebook pro" // maine is ki value idr change ki hai
 console.log(newhp.getvalue()) 
 
+// protected in ts
+class bankAccount{
+  private balance=1200; // private variable ko sirf class ma hi use kr skta hain mgr class k bahir use nhi kr skta
+ getvalue(){
+   console.log(this.balance);
+   
+ }
+}
+let newBankAccount = new bankAccount() 
+// newBankAccount.balance =120000 agr ma private variable ko bahir use kroon ga to yn uski value change kroon to error ayy ga q k private variable ko bahir nhi use kr skta
+console.log(newBankAccount.getvalue()) //private value ko dekh skta ho uska liya class ma function banao jis ma private ko access kro ga to ap is trhan is private value ko class k bahir dekh skta hoo
+
 
