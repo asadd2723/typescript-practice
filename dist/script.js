@@ -238,3 +238,22 @@ const readinter = {
 console.log(readinter.name); // Alice 
 console.log(readinter.age); // 30
 // readinter.name = "Bob"; // Error: Cannot assign to 'name' because it is a read-only property
+// getter and setter in TS
+//getter sy hum value get krta hain class ma or setter sy set krta hain value class ma or get or set hota hai function mgr use as object hota hai
+class animal {
+    constructor(name) {
+        this.name = name;
+        this.name = name;
+    }
+    get getAnimal() {
+        return this.name;
+    }
+    set setAnimal(name) {
+        this.name = name;
+    }
+}
+let an1 = new animal("cat");
+console.log(an1);
+console.log(an1.getAnimal); // getter or setter function hain mgr use idr object jsy huwa hai
+an1.setAnimal = "dog";
+console.log(an1.getAnimal);
