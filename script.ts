@@ -401,3 +401,8 @@ function explicitFn ():string{ // yeh explicit return function q k yeh type bata
 function implicitFn(){ // idr function ki type khud sy typescript na decide krlii return ki type dekh kr
   return 29
 }
+
+// Type assertions in TS
+// Type assertions ma AS word use krta hain type batana k liya or Type assertions ko krta hain jab html element ki type batani ho
+
+document.querySelector("p") as HTMLParagraphElement // idr jab koi html element ko element ki ya to us html ki type bi define krdi TS ma

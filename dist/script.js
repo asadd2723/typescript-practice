@@ -271,3 +271,6 @@ function explicitFn() {
 function implicitFn() {
     return 29;
 }
+// Type assertions in TS
+// Type assertions ma AS word use krta hain type batana k liya or Type assertions ko krta hain jab html element ki type batani ho
+document.querySelector("p"); // idr jab koi html element ko element ki ya to us html ki type bi define krdi TS ma
