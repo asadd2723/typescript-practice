@@ -406,3 +406,42 @@ function implicitFn(){ // idr function ki type khud sy typescript na decide krli
 // Type assertions ma AS word use krta hain type batana k liya or Type assertions ko krta hain jab html element ki type batani ho
 
 document.querySelector("p") as HTMLParagraphElement // idr jab koi html element ko element ki ya to us html ki type bi define krdi TS ma
+
+
+//string literals 
+//string literals ma sirf jo specific value as type add ki hai wohi value assignment kr skta hoo 
+
+// Define a variable that can only be one of these specific values
+let direction1: 'left' | 'right' | 'up' | 'down';
+
+// Valid assignments
+direction1 = 'left';
+direction1 = 'up';
+
+// Invalid assignment
+// direction = 'forward'; // Error: Type '"forward"' is not assignable to type '"left" | "right" | "up" | "down"'
+
+//Number literals 
+// number bi same string literals ki trhan is trhan hi boolean literal bi hai
+
+// Define a variable that can only be one of these specific numeric values
+let statusCode: 200 | 404 | 500;
+
+// Valid assignments
+statusCode = 200;
+statusCode = 404;
+
+// Invalid assignment
+// statusCode = 300; // Error: Type '300' is not assignable to type '200 | 404 | 500'
+
+// boolean literals 
+
+// Define a variable that can only be true or false
+let isActive: true | false;
+
+// Valid assignments
+isActive = true;
+isActive = false;
+
+// Invalid assignment
+// isActive = 1; // Error: Type '1' is not assignable to type 'true | false'
