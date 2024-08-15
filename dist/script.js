@@ -164,6 +164,7 @@ let newPhone = new phone("Iphone 15 Pro Max", 450000); //agr idr ek value pass k
 console.log(newPhone);
 //Access modifier in TS
 //class ma variable by default public hota hai to public nhi likho to by default public hi hoga
+// public ko change bi krskta access bi kr skta hoon class k bahir sy or andr sy
 class hp {
     constructor() {
         this.name = "laptop"; // by default yeh variable public hoga to public na likho to kuch nhi hoga or isko class k andr or bahir sy change ki ya ja skta hai
@@ -176,7 +177,8 @@ let newhp = new hp();
 console.log(newhp.getvalue());
 newhp.name = "notebook pro"; // maine is ki value idr change ki hai
 console.log(newhp.getvalue());
-// protected in ts
+// private in ts
+// private variable tb use krta hain jab variable ko private rkhna ho koi us ko access kr change na kry 
 class bankAccount {
     constructor() {
         this.balance = 1200; // private variable ko sirf class ma hi use kr skta hain mgr class k bahir use nhi kr skta or is ko extend class ma bi use nhi kr skta
@@ -189,6 +191,7 @@ let newBankAccount = new bankAccount();
 // newBankAccount.balance =120000 agr ma private variable ko bahir use kroon ga to yn uski value change kroon to error ayy ga q k private variable ko bahir nhi use kr skta
 console.log(newBankAccount.getvalue()); //private value ko dekh skta ho uska liya class ma function banao jis ma private ko access kro ga to ap is trhan is private value ko class k bahir dekh skta hoo
 // protected in TS
+// protected bi same private ki trhan mgr jab koi class extends hoti hai kisi or class k saath tb ap protected k use kr skta hoo q k protected other class ma share ho jata mgr classes k bahir nhi....
 class admin {
     constructor() {
         this.usr = "Asad"; // is ko private krdo ga to yeh extend class ma access nhi hoga protected or private ma itna farak hai k protected extends ho kr use kr hojata hai dusri classes ma private nhi hota
@@ -205,3 +208,7 @@ class adminUser extends admin {
 }
 let getAdmin = new adminUser();
 getAdmin.getvale();
+//difference between access modifier (public, private protected)
+// public jo ap jidr mrzi use or change kr skta hoon class k bahir bi or andr bi
+// private class k bahir use nhi ho skta
+// protected class k extend hona py other classes ma use ho skta hai mgr class k bahir nhi....
