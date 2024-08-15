@@ -267,3 +267,6 @@ class phone{
 
 let newPhone = new phone("Iphone 15 Pro Max",450000) //agr idr ek value pass kroon ga to error agyy q k constructor ma parameter do hain error hanlding boht achi hai Typescript ma yeh sub javascript ma nhi hoti 
 console.log(newPhone);
+
+
+console.log("checked")
