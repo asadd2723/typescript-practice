@@ -270,3 +270,8 @@ console.log(newPhone);
 
 
 console.log("checked")
+console.log(a);
+console.log(a);
+console.log(a);
+console.log(a);
+
