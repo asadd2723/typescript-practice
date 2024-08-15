@@ -381,3 +381,23 @@ console.log(an1)
 console.log(an1.getAnimal) // getter or setter function hain mgr use idr object jsy huwa hai
 an1.setAnimal = "dog"
 console.log(an1.getAnimal)
+
+
+//Function in TS
+//void in function jab function kuch nhi return kr rha ho udr void use krta
+function fnvoid():void { // this function also called named function 
+  console.log("hello world") // idr return nhi ho rha just console ki ya
+}
+
+// function ma function ki type zaror batao jis sy code ko samajna easy hota 
+
+// explicit return function jis ap batao k function konsy type yn kia return kry ga 
+function explicitFn ():string{ // yeh explicit return function q k yeh type batai hai function ki
+  return "asad"
+}
+
+// implicit return mtlb jis function hum nahi batain ga k function kia return kr rha mgr typescript data sy us function ki type decide kry function kia return kry ga.....
+
+function implicitFn(){ // idr function ki type khud sy typescript na decide krlii return ki type dekh kr
+  return 29
+}
