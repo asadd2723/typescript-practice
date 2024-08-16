@@ -1,19 +1,20 @@
 // why use Typescript?
-// jissy k javascript dynamic language jis sy hum koi bi variable yn function ma koi data type add kr deta tha jis code thora mess hojata tha humain data type pta bi laggta error k nhi pta lagta q aa raha kis wajah sy aa raha hai to Typescript hum face ni krni prhti typescript thora restricted mode rkhta k jo bi variable function bano mujhe uska type btao us ma konsy or kasy data ayy is code mess nhi hota hai error handling easy hojati hai 
+// jaisy k javascript dynamic language jis sy hum koi bi variable yn function ma koi bi data type add kr deta tha jis sy code thora mess hojata tha humain variable or function exact data type pta nhi lagti thi error k nhi pta lagta q aa raha. kis wajah sy aa raha hai to Typescript ma humain yeh sub face ni krna prhta typescript thora restricted mode rkhta k jo bi variable function bano mujhe uska type btao us ma konsy or kasy data ayy ga or issy code mess nhi hota hai error handling easy hojati hai 
 
 // typescript vs javascript 
-// ts superset hai js k... js ma kaffiii chezein jo nhi thi jo ts ma or specific TS type k liya use hoti ha jo JS ma data ki wajah sy error ata tha k ap data send or receive kr raha wagira data type batai yeh issue nhi ata TS mma jis error handling easy hojati hai
+// ts superset hai js k... js ma jo kaffiii chezein nhi thi woh ts ma hai or specific TS data type k liya use hoti ha jo JS ma nhi ....JS ma data type batana ki wajah sy error ata tha k ap data send or receive kr raha wagira mgr data type nhi batai.... yeh issue nhi ata TS ma jis sy error handling easy hojati hai ...TS apko khud bata hai kedr ap kia glti kr rha hoon misal k toor py ap na koi variable ko string data type dai to in future ap usko number yn boolean assign krdoo ga to error aajaii ga....
 
-// string 
+//data types in TS 
+// string in TS 
 let a:string = "202020";
 
-//boolean
+//boolean in TS 
 let bool: boolean = true;
 
-//number
+//number in TS 
 let num: number =  1000;
 
-//array 
+//array in TS 
 let arr:[string] = ["string"]
 let arr1: [number] =[20];
 
@@ -141,7 +142,7 @@ let getUser: getUserDetail ={
   username:"asadd2723",
   phone:923117737399,
   email:"asadu3040@gmail.com",
-  password:"asad0000"
+  password:"12344"
 }
 
 //interface in TS 
@@ -403,10 +404,34 @@ function implicitFn(){ // idr function ki type khud sy typescript na decide krli
 }
 
 // Type assertions in TS
-// Type assertions ma AS word use krta hain type batana k liya or Type assertions ko krta hain jab html element ki type batani ho
+// Type assertions ma AS word use krta hain type batana k liya or Type assertions use ko krta hain jab html element ki type batani ho 
+// any or unknown ko specific type k liya bi AS syntax k use krta hain
 
 document.querySelector("p") as HTMLParagraphElement // idr jab koi html element ko element ki ya to us html ki type bi define krdi TS ma
 
+// 1. as Syntax
+
+// The as syntax is used to assert the type of a value. It's the recommended syntax in TypeScript, especially when working with JSX in React, where angle-bracket syntax may not be compatible.
+
+let someValue: any = "This is a string";
+
+// Using 'as' syntax to assert the type
+let stringLength: number = (someValue as string).length; //ap type ko bi as syntax ma kr skta hoon jaisy htmlelement k bataya
+
+console.log(stringLength); // Output: 18
+
+// 2. Angle-Bracket Syntax
+
+// The angle-bracket syntax is another way to assert the type of a value. This syntax is similar to generic type parameters and is often used in traditional TypeScript code.
+
+// Example:
+
+let someValue1: any = "This is a string";
+
+// Using angle-bracket syntax to assert the type
+let stringLength1: number = (<string>someValue1).length; //angle bracket ma type ko define ki hai
+
+console.log(stringLength1); // Output: 18
 
 //string literals 
 //string literals ma sirf jo specific value as type add ki hai wohi value assignment kr skta hoo 
